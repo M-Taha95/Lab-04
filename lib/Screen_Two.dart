@@ -131,6 +131,56 @@ class _Screen_TwoState extends State<Screen_Two> {
                   car = val.toString();
                 });
               },
+            ),
+            CheckboxListTile(
+              secondary: Icon(
+                Icons.car_rental,
+                size: 30,
+              ),
+              subtitle: Text("Model 2022",
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      letterSpacing: 2,
+                      color: Color.fromARGB(255, 177, 206, 221))),
+              title: Text("Range Rover",
+                  style: TextStyle(
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold,
+                      letterSpacing: 2,
+                      color: Color.fromARGB(255, 177, 206, 221),
+                      fontFamily: 'MsMadi')),
+              value: car1,
+              onChanged: (val) {
+                setState(() {
+                  car1 = val!;
+                });
+              },
+            ),
+            CheckboxListTile(
+              secondary: Icon(
+                Icons.car_rental,
+                size: 30,
+              ),
+              subtitle: Text("Model 2022",
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      letterSpacing: 2,
+                      color: Color.fromARGB(255, 177, 206, 221))),
+              title: Text("Range Rover",
+                  style: TextStyle(
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold,
+                      letterSpacing: 2,
+                      color: Color.fromARGB(255, 177, 206, 221),
+                      fontFamily: 'MsMadi')),
+              value: car1,
+              onChanged: (val) {
+                setState(() {
+                  car1 = val!;
+                });
+              },
             )
           ],
         )),
